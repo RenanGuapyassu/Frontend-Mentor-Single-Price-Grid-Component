@@ -1,0 +1,127 @@
+*{
+    font-family: 'Karla', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    line-height: 1.3em;
+    font-size: 16px;
+}
+main{
+    background-color: hsl(204, 43%, 93%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid{
+    display: flex;
+    width: 80vh;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 60vh;
+    box-shadow: 0px 5px 16px 0px hsl(218, 22%, 67%);
+}
+.grid > * {
+    display: flex;
+    
+}
+.grid h1 {
+    font-size: 20px;
+    margin: 0 0 1em;
+    font-weight: bold;
+    color: hsl(179, 62%, 43%);
+}
+.grid h2 {
+    font-size: 17px;
+    margin: 0 0 1em;
+    font-weight: bold;
+}
+.whiteBox{
+    background-color: white;
+    flex-direction: column;
+    padding: 5% 10% 5% 5%;
+    justify-content: space-evenly;
+}
+.moneyBack{
+    color: hsl(71, 73%, 54%);
+    font-weight: bold;
+}
+.whiteBox p{
+    font-weight: normal;
+    color: hsl(218, 22%, 67%);
+}
+.cyanBox{
+    background-color: hsl(179, 62%, 43%);
+    padding: 5%;
+}
+.cyanBox > * {
+    display: flex;
+}
+.fullAcess{
+    font-weight: lighter;
+
+}
+.price{
+    display: flex;
+    align-items: center;
+}
+.price p {
+    margin: 0 5% 0 0;
+    font-size: 25px;
+    color: white
+}
+.price{
+    color:hsl(179, 63%, 60%);
+}
+.smallerGrid{
+    width: 100%;
+    color: white;
+    display: flex;
+
+}
+.smallerGrid > *{
+    flex-basis: 50%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.brightCyanBox{
+    background-color: hsl(179, 63%, 60%);
+    padding: 5%;
+}
+.brightCyanBox ul{
+    font-weight: lighter;
+}
+button{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(71, 73%, 54%);
+    border-style: none;
+    color: white;
+    align-items: center;
+    height: 3em;
+    border-radius: 5px;
+    box-shadow: 0px 5px 16px 0px hsl(218, 22%, 47%);
+}
+footer{
+    text-align: center;
+}
+@media screen and (max-width: 480px){
+    .grid{
+        flex-direction: column;
+        height: auto;
+        width: 80%;
+        height: 98%%;
+        font-size: small;
+        
+    }
+    .smallerGrid{
+        flex-direction: column;
+    
+    }
+    button{
+        margin: 8% 0 8%;
+    }
+
+}
